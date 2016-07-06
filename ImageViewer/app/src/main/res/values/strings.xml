@@ -1,0 +1,10 @@
+﻿<resources>
+    <string name="app_name">Ville de Cotonou</string>
+    <string name="action_settings">Settings</string>
+    <string name="Cotonou">Cotonou</string>
+    <string name="imagecotonou1">Imagecotonou1</string>
+    <string name="imagecotonou2">Imagecotonou2</string>
+    <string name="imagecotonou3">Imagecotonou3</string>
+    <string name="titre_cotonou">Découvrez la ville de Cotonou en images!</string>
+
+</resources>

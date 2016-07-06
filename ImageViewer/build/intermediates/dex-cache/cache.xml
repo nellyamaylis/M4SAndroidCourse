@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_7c0c47bfb2befeb295a1f01c3eb82c8b9f12e1ca.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.0.0_6dcad620e1dbba9c07372aba8210f952e1c9ee88.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.0.0_3359ace4b3c363af4a8f42738d1f134fa876f83c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.0.0_a50b135b29efb19bf3e99182af5c28b62b738ecb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.0.0_6d3cff7a24e28d0202598d022bd077adea54a2aa.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.0.0_b63165dfa81c97ed3b7e86c075820290d56591a1.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nellya\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\24.0.0\2943c74db6d4346ab8c6531adac91fa05c137c40\support-annotations-24.0.0.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_ed1f6502daee75952cd661be7a14a3a98051297d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\Users\Nellya\AndroidStudioProjects\ImageViewer\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_2b49f5f1cce3886d71b0ce420a62c9c44d1f431a.jar" />
+    </item>
+
+</items>
