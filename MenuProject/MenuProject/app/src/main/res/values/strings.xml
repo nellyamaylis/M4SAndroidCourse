@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MenuProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="sms">SMS</string>
+    <string name="phone">PHONE</string>
+    <string name="SMS">sms</string>
+    <string name="PHONE">phone</string>
+    <string name="WEB">WEB</string>
+    <string name="MAP">MAP</string>
+    <string name="SHARE">SHARE</string>
+    <string name="NEW_ACTIVITY">NEW ACTIVITY</string>
+    <string name="title_activity_new" />
+    <string name="hello_nellya_zohoun">Hello Nellya Zohoun</string>
+    <string name="action_help">Help</string>
+    <string name="title_activity_help">HelpActivity</string>
+</resources>
