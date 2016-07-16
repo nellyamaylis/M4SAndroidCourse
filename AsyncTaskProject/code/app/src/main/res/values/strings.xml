@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AsyncTaskProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="afficher_l_image">Afficher l\'image</string>
+    <string name="image_en_cours_de_chargement">Image en cours de chargement!</string>
+    <string name="imageview">imageView</string>
+    <string name="ASyncTaskProject" />
+</resources>
