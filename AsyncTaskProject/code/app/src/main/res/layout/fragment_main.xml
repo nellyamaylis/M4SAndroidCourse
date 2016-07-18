@@ -10,37 +10,28 @@
     tools:context="com.example.nellya.asynctaskproject.MainActivityFragment">
 
     <TextView
-        android:text="@string/image_en_cours_de_chargement"
+        android:text="@string/ma_ville_natale_ouagadoudou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
-
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/myProgressBar"
-        android:background="@color/accent_material_light"
-        android:indeterminate="false"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/afficher_l_image"
         android:id="@+id/myButton"
-        android:layout_below="@+id/myProgressBar"
+        android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
+        android:contentDescription="@string/imageview"
         android:layout_below="@+id/myButton"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:contentDescription="@string/imageview" />
+        android:layout_alignParentStart="true" />
+
 
 </RelativeLayout>

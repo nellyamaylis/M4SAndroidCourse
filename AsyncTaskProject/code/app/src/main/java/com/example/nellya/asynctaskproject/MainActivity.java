@@ -1,6 +1,5 @@
 package com.example.nellya.asynctaskproject;
 
-import java.lang.Void;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -13,7 +12,6 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.ProgressBar;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
 import android.graphics.Bitmap;
@@ -21,7 +19,6 @@ import android.graphics.BitmapFactory;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-    private ProgressBar myProgressBar;
     private Button myButton;
 
     @Override
@@ -30,15 +27,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        myProgressBar = (ProgressBar) findViewById(R.id.myProgressBar);
         myButton = (Button) findViewById(R.id.myButton);
 
 
         myButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                AfficheImage affich=new AfficheImage();
-                affich.execute();
+                new AfficheImage((ImageView) findViewById(R.id.imageView)).execute("https://raw.githubusercontent.com/nellyamaylis/M4SAndroidCourse/master/AsyncTaskProject/images.png");
             }
         });
 
@@ -67,63 +62,39 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private class AfficheImage extends AsyncTask<Void, Integer, Void>
+    private class AfficheImage extends AsyncTask<String, Integer, Bitmap>
     {
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
+        ImageView imageV;
+        public AfficheImage(ImageView imageV){
+            this.imageV = imageV;
             Toast.makeText(getApplicationContext(), "Début du chargement de l'image", Toast.LENGTH_LONG).show();
 
         }
 
         @Override
-        protected void onProgressUpdate(Integer... values){
-            super.onProgressUpdate(values);
-            // Mise à jour de la ProgressBar
-            ImageView image;
-            myProgressBar.setProgress(values[0]);
-            image = (ImageView) findViewById(R.id.imageView);
-
-        }
-
-        @Override
-        protected Void doInBackground(Void... arg0) {
-
-            int progress;
-            for (progress=0;progress<=100;progress++)
-            {
-                for (int i=0; i<1000000; i++){}
-                //la méthode publishProgress met à jour l'interface en invoquant la méthode onProgressUpdate
-                publishProgress(progress);
-                progress++;
-                downloadImage();
-                }
-            return null;
-        }
-
-    private Bitmap downloadImage() {
+        protected Bitmap doInBackground(String... arg0) {
+            Bitmap bitmap0 = null;
         try {
-            Bitmap bitmap = null;
-            URL url = new URL("https://github.com/nellyamaylis/M4SAndroidCourse/blob/master/AsyncTaskProject/images.png");
+
+            URL url = new URL("https://raw.githubusercontent.com/nellyamaylis/M4SAndroidCourse/master/AsyncTaskProject/images.png");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             if (con.getResponseCode() != HttpURLConnection.HTTP_OK) {
                 throw new Exception("Failed to connect");
             }
             InputStream is = con.getInputStream();
-            publishProgress(0);
-            Bitmap bitmap1 = BitmapFactory.decodeStream(is);
+             bitmap0 = BitmapFactory.decodeStream(is);
             is.close();
-            return bitmap1;
+            return bitmap0;
         } catch (Exception e) {
             Log.e("Image", "Failed to load image", e);
             Log.e("error", e.getMessage());
         }
-        return null;
+        return bitmap0;
     }
         @Override
-        protected void onPostExecute(Void result) {
+        protected void onPostExecute(Bitmap result) {
             Toast.makeText(getApplicationContext(), "Le chargement de l'image est terminé", Toast.LENGTH_LONG).show();
+            imageV.setImageBitmap(result);
         }
     }
 }
