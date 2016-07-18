@@ -1,4 +1,9 @@
 package com.example.nellya.asynctaskproject;
+import android.app.Activity;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.NetworkInfo.State;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -67,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageV;
         public AfficheImage(ImageView imageV){
             this.imageV = imageV;
-            Toast.makeText(getApplicationContext(), "Début du chargement de l'image", Toast.LENGTH_LONG).show();
+            isConnectedInternet(MainActivity.this);
+            Toast.makeText(getApplicationContext(), "Chargement de l'image", Toast.LENGTH_LONG).show();
 
         }
 
@@ -96,5 +102,30 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Le chargement de l'image est terminé", Toast.LENGTH_LONG).show();
             imageV.setImageBitmap(result);
         }
+
+
+            public  boolean isConnectedInternet(Activity activity)
+            {
+                ConnectivityManager connectivityManager = (ConnectivityManager)activity.getSystemService(Context.CONNECTIVITY_SERVICE);
+                NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+                if (networkInfo != null)
+                {
+                    State networkState = networkInfo.getState();
+                    if (networkState.compareTo(State.CONNECTED) == 0)
+                    {
+                        Toast.makeText(getApplicationContext(), "Le téléphone est connecté à internet", Toast.LENGTH_LONG).show();
+                        return true;
+                    }
+
+                    else
+                        Toast.makeText(getApplicationContext(), "Le téléphone n'est pas connecté à internet", Toast.LENGTH_LONG).show();
+                        return false;
+
+                }
+                else return false;
+            }
+
+
+
     }
 }
