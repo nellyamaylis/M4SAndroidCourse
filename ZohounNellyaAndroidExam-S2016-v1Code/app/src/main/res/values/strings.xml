@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ZohounNellyaMidterm</string>
+    <string name="action_settings">Settings</string>
+    <string name="miles">Miles</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="messageconvert">(Appuyer pour convertir)</string>
+    <string name="btnconvertir">Convertir</string>
+    <string name="r_sultat">Résultat</string>
+</resources>
