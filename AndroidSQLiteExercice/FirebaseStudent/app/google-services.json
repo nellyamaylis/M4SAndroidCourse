@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "728791206463",
+    "firebase_url": "https://fir-student-566d6.firebaseio.com",
+    "project_id": "fir-student-566d6",
+    "storage_bucket": "fir-student-566d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728791206463:android:2c9e5a8e3ac790e9",
+        "android_client_info": {
+          "package_name": "com.example.nellya.firebasestudent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728791206463-51scgn38mnisifbeb53qnc8d63e1vg6q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSun_M1d9LWBe7UCqx5Fue6Iv5Xun12XE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
